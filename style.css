@@ -7,6 +7,17 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+img{
+    max-width: 320px;
+    max-height: 320px;
+}
+
+.image-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .col-xs-12 p {
     font-size: 1.6em;
 }
@@ -536,7 +547,6 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
     text-align: center;
 }
 
@@ -888,6 +898,11 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .portfolio-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
